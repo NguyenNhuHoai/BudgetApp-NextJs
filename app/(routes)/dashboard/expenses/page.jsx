@@ -49,8 +49,8 @@ function ExpensesPage() {
     setExpenseList(result);
   };
   return (
-    <div>
-      <h2 className="font-bold text-2xl">My Expenses</h2>
+    <div className="p-5">
+      <h2 className="font-bold text-3xl">My Expenses</h2>
       <ExpenseListTable
         expensesList={expenseList}
         refreshData={() => getBudgetsList()}

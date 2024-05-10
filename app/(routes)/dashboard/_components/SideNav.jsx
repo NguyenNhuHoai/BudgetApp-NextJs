@@ -40,7 +40,9 @@ function SideNav() {
   }, [path]);
   return (
     <div className="h-screen p-5 border shadow-sm">
-      <Image src={"/logo.svg"} alt="logo" width={160} height={100} />
+      <Link href={"/"}>
+        <Image src={"/logo.svg"} alt="logo" width={160} height={100} />
+      </Link>
       <div>
         {menuList.map((menu, index) => (
           <Link href={menu.path} key={index}>
